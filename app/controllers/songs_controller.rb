@@ -3,7 +3,7 @@ class SongsController < ApplicationController
     if params[:artist_id]
       if Artist.find_by(id: params[:artist_id]).nil?
       #  render template: 'artist/index'
-        redirect_to '/artists', flash: { message: "Artist not found" }
+        redirect_to artists_path, flash: { message: "Artist not found" }
       else
         @songs = Artist.find_by(id: params[:artist_id]).songs
       end
