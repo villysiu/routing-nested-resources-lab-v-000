@@ -2407,3 +2407,7 @@ Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.3ms)
 Processing by SongsController#show as HTML
   Parameters: {"id"=>"12345", "artist_id"=>"1"}
   [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSong Load (0.1ms)[0m  SELECT  "songs".* FROM "songs" WHERE "songs"."id" IS NULL LIMIT 1
+Redirected to http://test.host/artists/1/songs
+Completed 302 Found in 10ms (ActiveRecord: 0.2ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
