@@ -19,7 +19,7 @@ class SongsController < ApplicationController
       if artist.songs.include?(song)
         @song = song
       else
-        redirect_to '/artist', flash: { message: "Song not found" }
+        redirect_to '/artists', flash: { message: "Song not found" }
       end
     else
       @song = Song.find(params[:id])
