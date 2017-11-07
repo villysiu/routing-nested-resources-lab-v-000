@@ -2826,3 +2826,4 @@ Processing by SongsController#show as HTML
   [1m[35mSong Load (0.1ms)[0m  SELECT  "songs".* FROM "songs" WHERE "songs"."id" IS NULL LIMIT 1
 Redirected to http://test.host/artists/1/songs
 Completed 302 Found in 10ms (ActiveRecord: 0.2ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
